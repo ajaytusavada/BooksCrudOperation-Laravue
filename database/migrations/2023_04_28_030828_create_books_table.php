@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->longText('description');
+            $table->unsignedBigInteger('author');
+            $table->string('category');
             $table->string('price');
-            $table->string('image');
+            $table->foreign('author')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -19,5 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Route::resource('books',App\Http\Controllers\BookController::class)->only(['index','store','show','update','destroy']);
 
-Route::resource('books',App\Http\Controllers\BookController::class)->only(['index','store','show','update','destroy']);
+Route::middleware('api')->group(function () {
+    Route::resource('books', BookController::class);
+});

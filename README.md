@@ -12,3 +12,6 @@
         8) Use validation to ensure that the book title, author, and category fields are not empty 
         9) Use Laravel's authentication system to create a login and registration page for users 
         10) Use Vue.js to display success and error messages when a user adds, edits, or deletes a book.
+
+
+

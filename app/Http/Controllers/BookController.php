@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use Illuminate\Http\Request;
-
 class BookController extends Controller
 {
     /**
@@ -12,23 +11,24 @@ class BookController extends Controller
      */
     public function index()
     {
-        return view('books.index');
+        $books = Book::all()->toArray();
+        return array_reverse($books);  
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
