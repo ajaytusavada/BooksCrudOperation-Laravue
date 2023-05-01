@@ -1,7 +1,3 @@
-{{-- @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-<div id="app">
-</div> --}}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
