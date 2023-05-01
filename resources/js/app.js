@@ -1,4 +1,4 @@
-// require('./bootstrap');
+require('./bootstrap');
 
 import { createApp } from 'vue';
 import BookList from './components/BookList.vue';
