@@ -1,10 +1,9 @@
-require('./bootstrap');
+window.Vue = require('vue');
+// router
+window.router = router;
+window.Fire = new Vue();
 
-import { createApp } from 'vue';
-import BookList from './components/BookList.vue';
-
-createApp({
-    components: {
-        BookList,
-    }
-}).mount('#app');
+const app = new Vue({
+    el: '#app',
+    router,
+}).$mount('#app');

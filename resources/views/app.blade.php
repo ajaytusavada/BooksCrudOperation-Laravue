@@ -13,7 +13,8 @@
 </head>
 <body>
     <div id="app">
-        <book-list />
+        <h3>Laravel Vue</h3>
+        <router-view></router-view>   
     </div>
 </body>
 </html>
